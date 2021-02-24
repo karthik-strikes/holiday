@@ -6,8 +6,27 @@
 * {
   box-sizing: border-box;
 }
+body {
+  background-image: url('https://images.unsplash.com/photo-1493770348161-369560ae357d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
 
 #myInput {
+  /*width: 130px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: white;
+  background-image: url('searchicon.png');
+  background-position: 10px 10px; 
+  background-repeat: no-repeat;
+  padding: 12px 20px 12px 40px;*/
+  /*-webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;*/
   background-image: url('/css/searchicon.png');
   background-position: 10px 12px;
   background-repeat: no-repeat;
@@ -16,6 +35,8 @@
   padding: 12px 20px 12px 40px;
   border: 1px solid #ddd;
   margin-bottom: 12px;
+  -webkit-transition: width 0.4s ease-in-out;
+  transition: width 0.4s ease-in-out;
 }
 
 #myUL {
@@ -32,7 +53,10 @@
   text-decoration: none;
   font-size: 18px;
   color: black;
+  opacity: 0.6;
+  transition-timing-function: ease-in-out;
   display: block
+
 }
 
 #myUL li a:hover:not(.header) {
@@ -41,21 +65,21 @@
 </style>
 </head>
 <body>
+<!-- <div style="background-image: url('https://images.unsplash.com/photo-1493770348161-369560ae357d?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80');"> -->
 
 <h2>Search For the Favourite😉</h2>
 
 <input type="text" id="myInput" onkeyup="myFunction()" placeholder="Search for names.." title="Type in a name">
 
 <ul id="myUL">
-  <li><a href="#">Goa</a></li>
-  <li><a href="#">Delhi</a></li>
+  <li><a href="goa.html">Goa</a></li>
+  <li><a href="goa.html">Delhi</a></li>
 
-  <li><a href="#">Mumbai</a></li>
-  <li><a href="#">Hyderabad</a></li>
-
-  <li><a href="#">Kolkata</a></li>
-  <li><a href="#">Chennai</a></li>
-  <li><a href="#">Patna</a></li>
+  <li><a href="goa.html">Mumbai</a></li>
+  <li><a href="goa.html">Hyderabad</a></li>
+  <li><a href="goa.html">Kolkata</a></li>
+  <li><a href="goa.html">Chennai</a></li>
+  <li><a href="goa.html">Patna</a></li>
 </ul>
 
 <script>
